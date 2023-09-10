@@ -1,0 +1,7 @@
+1694314151143	Rename package 'com.devfun.dao'
+1694314166021	Rename package 'com.devfun.service'
+1694314180276	Rename package 'com.devfun.vo'
+1694314742543	Rename resource 'home.jsp'
+1694314758974	Move 'index.jsp' to 'webapp'
+1694315010826	Move 'index.jsp' to 'views'
+1694315396783	Rename resource 'index.jsp'
