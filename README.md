@@ -26,9 +26,9 @@ REST API는 REST 원리로 만들어진 API이다.
 REST 원리에 따라 자원을 명시하고(HTTP URI) 자원에 대한 행위를 통해(HTTP Method) 내용을 표현(CRUD Operation)한다.
 REST API 설계 규칙을 잘 지킨 시스템을 RESTful이라고 한다.
 
-REST : 자원을 구분하여 해당 자원의 상태를 주고 받는 모든 것
-REST 구성요소    
-자원(Resource), 행위(verb), 표현(Representation)
+  REST : 자원을 구분하여 해당 자원의 상태를 주고 받는 모든 것
+  REST 구성요소    
+  자원(Resource), 행위(verb), 표현(Representation)
 
 - JSON    
 데이터를 저장/전송할 때 사용하는 경량의 data 교환 형식이다.    
