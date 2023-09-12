@@ -25,18 +25,19 @@ movieService.java에 @Service 어노테이션 추가
 REST API는 REST 원리로 만들어진 API이다.
 REST 원리에 따라 자원을 명시하고(HTTP URI) 자원에 대한 행위를 통해(HTTP Method) 내용을 표현(CRUD Operation)한다.
 REST API 설계 규칙을 잘 지킨 시스템을 RESTful이라고 한다.
+
 REST : 자원을 구분하여 해당 자원의 상태를 주고 받는 모든 것
 REST 구성요소    
-- 자원(Resource), 행위(verb), 표현(Representation)
+자원(Resource), 행위(verb), 표현(Representation)
 
 - JSON    
-데이터를 저장/전송할 때 사용하는 경량의 data 교환 형식이다.
-자바스크립트 객체 형식을 기반으로 만들어졌다. 그래서 key와 value로 구성되고 key와 문자열은 항상 쌍따옴표로 감싸야한다.
-JSON은 데이터 포맷일 뿐 데이터를 불러오기 위해서는 XMLHttpRequest() 메서드를 사용해야 한다.
+데이터를 저장/전송할 때 사용하는 경량의 data 교환 형식이다.    
+자바스크립트 객체 형식을 기반으로 만들어졌다. 그래서 key와 value로 구성되고 key와 문자열은 항상 쌍따옴표로 감싸야한다.    
+JSON은 데이터 포맷일 뿐 데이터를 불러오기 위해서는 XMLHttpRequest() 메서드를 사용해야 한다.    
 
 - @PathVariable    
-데이터를 받아올 때 값을 쿼리스트링으로 전달하지 않는 경우에 사용한다.
-쿼리스트링을 사용하는 경우는 @RequestParam을 사용한다.(Get 방식 통신)
+데이터를 받아올 때 값을 쿼리스트링으로 전달하지 않는 경우에 사용한다.    
+쿼리스트링을 사용하는 경우는 @RequestParam을 사용한다.(Get 방식 통신)    
 
 **2. 추가 이론 과제(필수 이론 과제하면서 학습)**
 - URI 와 URL    
