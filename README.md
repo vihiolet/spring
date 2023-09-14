@@ -51,3 +51,28 @@ Put : 수정 - 리소스가 있으면 덮어쓰고(수정) 없으면 생성
 Patch : 수정 - 리소스 일부를 변경(수정)    
 Delete : 제거 
 
+
+# 3차 과제
+## 결과 스크린샷
+<div>
+  <img width="312" src="https://github.com/vihiolet/spring/assets/108925254/d2dd35f5-860a-4aa0-9cc3-e5d18c8ec563">
+  <img width="453" src="https://github.com/vihiolet/spring/assets/108925254/7a2db646-ccd0-4622-8c87-06f4e7f4cb39">
+</div>
+
+## 작업 과정 중 에러
+1. Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.    
+2. Error creating SQL Model Connection connection to springboot MySQL.    
+   해결 방법 : application.properties 파일에 있는 spring.datasource 정보를 mysql로 수정
+
+3. 스프링프로젝트 The selection cannot be run on any server
+   <a href="https://stackoverflow.com/questions/32731672/the-selection-cannot-be-run-on-any-server">참고한 스택오버플로우</a>
+
+## 작업 과정 중 새로 알게된 정보    
+1. 스프링부트 Snapshot버전    
+   Snapshot : 아직은 안정화되지 않은 데일리 빌드버전(최신 버전)    
+   M (Milestone) : 주요 기능이 구현될 때마다 배포하고 피드백을 받는 버전(M2는 '마일스톤 2번째'라는 의미)    
+   <a href="https://m.blog.naver.com/PostView.naver?blogId=doyoung0205&logNo=221783121918&categoryNo=1&proxyReferer=">참고한 블로그</a>    
+
+2. sql LEFT( string,length )    
+   문자열의 왼쪽부터 일정 길이만큼 출력하는 함수
+   
