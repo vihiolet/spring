@@ -77,16 +77,16 @@ Delete : 제거
    문자열의 왼쪽부터 일정 길이만큼 출력하는 함수
 
 ## SW활용 현황 통계 API 구축을 위한 SQL
-1. 월별 접속자 수
+1. 월별 접속자 수    
    select count(*) as loginCnt from requestinfo where left(createDate, 2) = #{year} and substring(createDate, 3,2) = #{month};
 
-3. 일자 접속자 수
+3. 일자 접속자 수    
    select count(*) from requestinfo where left(createDate, 2) = #{year} and substring(createDate, 3,2) = #{month} and substring(createDate, 5, 2) = #{day};
 
-5. 평균 하루 로그인 수
+5. 평균 하루 로그인 수    
    select avg(countDate) from (select date, count(date) as countDate from user group by date) as t1;
 
-7. 휴일을 제외한 로그인
+7. 휴일을 제외한 로그인    
    select count(*) from user where left(date, 4)= #{month} and holiday_fg = 'N';
 
 9. 부서별 월별 로그인 수    
