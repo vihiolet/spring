@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+    
+<mapper namespace="com.dev.webboot2.dao.StatisticMapperDapt">
+ 
+    <select id="selectDaptLogin" parameterType="string" resultType="hashMap">
+    <!-- 부서별 로그인 수 -->
+        select count(*) as daptLoginCnt from user where HR_ORGAN = #{dapt};              
+    </select>    
+</mapper>

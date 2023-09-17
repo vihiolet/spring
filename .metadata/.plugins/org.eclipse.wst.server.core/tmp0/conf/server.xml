@@ -160,7 +160,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="/Users/shinyunjin/spring/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/web" path="" reloadable="true" source="org.eclipse.jst.jee.server:web"/></Host>
+      <Context docBase="/Users/shinyunjin/Desktop/spring/spring/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/ROOT" path="" reloadable="false"/><Context docBase="/Users/shinyunjin/Desktop/spring/spring/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/web" path="/web" reloadable="false" source="org.eclipse.jst.jee.server:web"/><Context docBase="/Users/shinyunjin/Desktop/spring/spring/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/webboot-1" path="/webboot-1" reloadable="true" source="org.eclipse.jst.jee.server:webboot-1"/><Context docBase="/Users/shinyunjin/Desktop/spring/spring/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/webboot-2" path="/webboot-2" reloadable="true" source="org.eclipse.jst.jee.server:webboot-2"/></Host>
     </Engine>
   </Service>
 </Server>

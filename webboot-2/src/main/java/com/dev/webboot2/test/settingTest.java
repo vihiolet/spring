@@ -10,8 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
  
-import com.dev.webboot2.dao.StatisticMapper;
-import com.dev.webboot2.service.StatisticService;
+import com.dev.webboot2.service.*;
 
 @Controller
 public class settingTest {
@@ -21,11 +20,11 @@ public class settingTest {
     
     @ResponseBody 
     @RequestMapping("/sqlyearStatistic")
-    public Map<String, Object> sqltest(String year) throws Exception{ 
+    public Map<String, Object> sqltest(String year, String month) throws Exception{ 
         
-        return service.yearloginNum(year);
+        return service.yearloginNum(year, month);
     }
-    
+        
     @RequestMapping("/test") 
     public ModelAndView test() throws Exception{ 
         ModelAndView mav = new ModelAndView("test"); 
