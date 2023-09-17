@@ -84,10 +84,22 @@ Delete : 제거
    select count(*) from requestinfo where left(createDate, 2) = #{year} and substring(createDate, 3,2) = #{month} and substring(createDate, 5, 2) = #{day};
 
 5. 평균 하루 로그인 수    
-   select avg(countDate) from (select date, count(date) as countDate from user group by date) as t1;
+   select floor(avg(countDate)) from (select date, count(date) as countDate from user group by date) as t1;
 
 7. 휴일을 제외한 로그인    
    select count(*) from user where left(date, 4)= #{month} and holiday_fg = 'N';
 
 9. 부서별 월별 로그인 수    
    select count(*) from user where HR_ORGAN = #{dept};
+
+   <br><br>
+   
+# 4차 과제
+## 결과 스크린샷
+<div>
+  <img width="748" src="https://github.com/vihiolet/spring/assets/108925254/6bc42679-238f-4073-9b00-1b388777b678">
+  <img width="877" src="https://github.com/vihiolet/spring/assets/108925254/d74bc7b2-7b95-4579-b5fc-34512e38ef36">
+  <img width="603" src="https://github.com/vihiolet/spring/assets/108925254/e499c60f-b0af-469e-aa7c-ad22f47f7ff3">
+  <img width="728" src="https://github.com/vihiolet/spring/assets/108925254/de101155-24e8-42c8-b11d-38f93146572d">
+  <img width="728" src="https://github.com/vihiolet/spring/assets/108925254/fd8b9b7f-802a-498d-abc1-edcbbbc3a0c2">
+</div>
